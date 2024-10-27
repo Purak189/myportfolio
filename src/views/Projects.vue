@@ -75,7 +75,7 @@ const imgProject3 = [
               <a href="https://github.com/orgs/WebMastersUPC/repositories" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconGitHub color="#FFFFFF" width="25" height="25" ></IconGitHub>
               </a>
-              <a href="https://fromzeroupcapp.netlify.app/login" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://fromzeroupcapp.netlify.app" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconLink color="#FFFFFF" width="25" height="25"></IconLink>
               </a>
             </div>
@@ -119,7 +119,7 @@ const imgProject3 = [
               <a href="https://github.com/orgs/upc-pre-202401-si729-wx56-g3/repositories" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconGitHub color="#FFFFFF" width="25" height="25"></IconGitHub>
               </a>
-              <a href="https://webmasterupcapp.netlify.app/login" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://webmasterupcapp.netlify.app" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconLink color="#FFFFFF" width="25" height="25"></IconLink>
               </a>
             </div>

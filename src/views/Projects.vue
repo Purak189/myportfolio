@@ -16,27 +16,27 @@ import IconSpringBoot from "@/assets/icons/technologiesIcons/IconSpringBoot.vue"
 import IconAngular from "@/assets/icons/technologiesIcons/IconAngular.vue";
 import IconPython from "@/assets/icons/technologiesIcons/IconPython.vue";
 
-const imgProject1=[
-  './public/Project1Carousel/img1.png',
-  './public/Project1Carousel/img2.png',
-  './public/Project1Carousel/img3.png',
-  './public/Project1Carousel/img4.png',
-  './public/Project1Carousel/img5.png',
-  './public/Project1Carousel/img6.png'
+const imgProject1 = [
+  new URL('@/assets/Project1Carousel/img1.png', import.meta.url).href,
+  new URL('@/assets/Project1Carousel/img2.png', import.meta.url).href,
+  new URL('@/assets/Project1Carousel/img3.png', import.meta.url).href,
+  new URL('@/assets/Project1Carousel/img4.png', import.meta.url).href,
+  new URL('@/assets/Project1Carousel/img5.png', import.meta.url).href,
+  new URL('@/assets/Project1Carousel/img6.png', import.meta.url).href
 ];
 
-const imgProject2 =[
-  './public/Project2Carousel/img1.png',
-  './public/Project2Carousel/img2.png',
-  './public/Project2Carousel/img3.png',
-  './public/Project2Carousel/img4.png',
-  './public/Project2Carousel/img5.png'
+const imgProject2 = [
+  new URL('@/assets/Project2Carousel/img1.png', import.meta.url).href,
+  new URL('@/assets/Project2Carousel/img2.png', import.meta.url).href,
+  new URL('@/assets/Project2Carousel/img3.png', import.meta.url).href,
+  new URL('@/assets/Project2Carousel/img4.png', import.meta.url).href,
+  new URL('@/assets/Project2Carousel/img5.png', import.meta.url).href
 ];
 
-const imgProject3 =[
-  './public/Project3Carousel/img1.jpeg',
-  './public/Project3Carousel/img2.jpeg',
-  './public/Project3Carousel/img3.jpeg'
+const imgProject3 = [
+  new URL('@/assets/Project3Carousel/img1.jpeg', import.meta.url).href,
+  new URL('@/assets/Project3Carousel/img2.jpeg', import.meta.url).href,
+  new URL('@/assets/Project3Carousel/img3.jpeg', import.meta.url).href
 ];
 
 </script>

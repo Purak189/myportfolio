@@ -7,6 +7,8 @@ import Projects from "@/views/Projects.vue";
 import Formation from "@/views/Formation.vue";
 import Contact from "@/views/Contact.vue";
 import NavigationProgress from "@/components/NavigationProgress.vue";
+import Footer from "@/components/Footer.vue";
+import NavMenu from "@/components/NavMenu.vue";
 </script>
 
 <template>
@@ -15,7 +17,8 @@ import NavigationProgress from "@/components/NavigationProgress.vue";
     <Navbar/>
   </nav>
 
-  <main>
+  <main class="relative">
+    <NavMenu/>
     <NavigationProgress></NavigationProgress>
     <Home/>
     <About/>
@@ -25,7 +28,7 @@ import NavigationProgress from "@/components/NavigationProgress.vue";
   </main>
 
   <footer>
-
+    <Footer/>
   </footer>
 </template>
 

@@ -5,8 +5,10 @@
 
   --vt-c-brand1: #12F7D6;
   --vt-c-brand2: #98FAEC;
+  --vt-c-brand3: #9747FF;
 
   --vt-c-grey: #43454D;
+  --vt-c-grey2: #71717A;
 }
 
 /* semantic color variables for this project */
@@ -16,6 +18,10 @@
 
   --color-brand-1: var(--vt-c-brand1);
   --color-brand-2: var(--vt-c-brand2);
+  --color-brand-3: var(--vt-c-brand3);
+
+    --color-grey: var(--vt-c-grey);
+    --color-grey-2: var(--vt-c-grey2);
 }
 
 

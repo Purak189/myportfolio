@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 w-full h-1 bg-indigo-600" :style="{ width: scrollWidth + '%' }"></div>
+  <div class="fixed top-0 left-0 w-full h-1 bg-indigo-600 z-50" :style="{ width: scrollWidth + '%' }"></div>
 </template>
 
 <style scoped>

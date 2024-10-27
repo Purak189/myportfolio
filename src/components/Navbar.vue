@@ -13,20 +13,35 @@ export default defineComponent({
 </script>
 
 <template>
-  <nav class="w-full bg-transparent p-10 flex justify-around items-center">
-      <div class="w-1/2">
-        <span class="text-brand-1 text-3xl mr-5">&lt;C/&gt;</span>
-        <span class="text-white  text-3xl">Jair Velasquez</span>
-      </div>
-      <div class="w-2/5 flex justify-between items-center">
-        <span class="text-2xl text-brand-1">Inicio</span>
-        <span class=" text-xl font-bold tracking-wide">||||||</span>
-        <ul class="flex space-x-5">
-          <li><a href="" class="text-white flex gap-3 text-xl items-center"><IconLinkedin></IconLinkedin>Linkedin</a></li>
-          <li><a href="" class="text-white flex gap-3 text-xl items-center"><IconEmail></IconEmail> Mail</a></li>
-          <li><a href="" class="text-white flex gap-3 text-xl items-center"><IconGitHub></IconGitHub> GitHub</a></li>
-        </ul>
-      </div>
+  <nav class="w-full bg-transparent p-10 flex flex-col md:flex-row justify-around items-center">
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <span class="text-brand-1 text-3xl mr-5">&lt;C/&gt;</span>
+      <span class="text-white text-3xl">Jair Velasquez</span>
+    </div>
+    <div class="w-full lg:w-2/5 flex justify-between items-center gap-5 mt-5 lg:mt-0">
+      <span class="text-2xl text-brand-1 hidden md:inline">Inicio</span>
+      <span class="text-xl font-bold tracking-wide hidden md:inline">||||||</span>
+      <ul class="flex space-x-5 justify-center w-full md:w-auto">
+        <li>
+          <a href="" class="text-white flex gap-3 text-xl items-center">
+            <IconLinkedin></IconLinkedin>
+            <span class="hidden lg:inline">Linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-white flex gap-3 text-xl items-center">
+            <IconEmail></IconEmail>
+            <span class="hidden lg:inline">Mail</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-white flex gap-3 text-xl items-center">
+            <IconGitHub></IconGitHub>
+            <span class="hidden lg:inline">GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div class="flex justify-center pl-16 pr-16">
     <hr class="w-full bg-transparent pb-8 border-gray-500">

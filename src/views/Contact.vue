@@ -1,17 +1,33 @@
 <script setup>
+import { ref } from 'vue';
+import emailjs from 'emailjs-com';
 
 import IconMouse from "@/assets/icons/IconMouse.vue";
 import IconLine from "@/assets/icons/IconLine.vue";
 import IconSend from "@/assets/icons/IconSend.vue";
 
-let formData = {
+let formData = ref({
   name: "",
   email: "",
   message: "",
-};
+});
 
 const submitForm = () => {
-  console.log(formData);
+  emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: formData.value.name,
+        from_email: formData.value.email,
+        message: formData.value.message,
+      },
+      import.meta.env.VITE_EMAILJS_USER_ID
+  )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      }, (error) => {
+        console.log('FAILED...', error);
+      });
 };
 </script>
 

@@ -23,19 +23,19 @@ export default defineComponent({
       <span class="text-xl font-bold tracking-wide hidden md:inline">||||||</span>
       <ul class="flex space-x-5 justify-center w-full md:w-auto">
         <li>
-          <a href="" class="text-white flex gap-3 text-xl items-center">
+          <a href="https://www.linkedin.com/in/jair-velasquez-pizarro-ab9027271/" target="_blank" rel="noopener noreferrer" class="text-white flex gap-3 text-xl items-center">
             <IconLinkedin></IconLinkedin>
             <span class="hidden lg:inline">Linkedin</span>
           </a>
         </li>
         <li>
-          <a href="" class="text-white flex gap-3 text-xl items-center">
+          <a href="mailto:jairvelazpizar@gmail.com"  target="_blank" rel="noopener noreferrer" class="text-white flex gap-3 text-xl items-center">
             <IconEmail></IconEmail>
             <span class="hidden lg:inline">Mail</span>
           </a>
         </li>
         <li>
-          <a href="" class="text-white flex gap-3 text-xl items-center">
+          <a href="https://github.com/Purak189" target="_blank" rel="noopener noreferrer"  class="text-white flex gap-3 text-xl items-center">
             <IconGitHub></IconGitHub>
             <span class="hidden lg:inline">GitHub</span>
           </a>

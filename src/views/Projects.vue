@@ -72,10 +72,10 @@ const imgProject3 = [
             </h2>
             <!-- Enlaces a GitHub y Live Demo -->
             <div class="flex space-x-4 mt-4 mr-3">
-              <a href="https://github.com" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://github.com/orgs/WebMastersUPC/repositories" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconGitHub color="#FFFFFF" width="25" height="25" ></IconGitHub>
               </a>
-              <a href="https://webmaster.com" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://fromzeroupcapp.netlify.app/login" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconLink color="#FFFFFF" width="25" height="25"></IconLink>
               </a>
             </div>
@@ -116,10 +116,10 @@ const imgProject3 = [
             </h2>
             <!-- Enlaces a GitHub y Live Demo -->
             <div class="flex space-x-4 mt-4 mr-3">
-              <a href="https://github.com" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://github.com/orgs/upc-pre-202401-si729-wx56-g3/repositories" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconGitHub color="#FFFFFF" width="25" height="25"></IconGitHub>
               </a>
-              <a href="https://webmaster.com" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://webmasterupcapp.netlify.app/login" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconLink color="#FFFFFF" width="25" height="25"></IconLink>
               </a>
             </div>
@@ -160,11 +160,8 @@ const imgProject3 = [
             </h2>
             <!-- Enlaces a GitHub y Live Demo -->
             <div class="flex space-x-4 mt-4 mr-3">
-              <a href="https://github.com" target="_blank" class="text-teal-400 hover:text-teal-300">
+              <a href="https://github.com/Purak189/WhaleWay-PythonApp" target="_blank" class="text-teal-400 hover:text-teal-300">
                 <IconGitHub color="#FFFFFF" width="25" height="25"></IconGitHub>
-              </a>
-              <a href="https://webmaster.com" target="_blank" class="text-teal-400 hover:text-teal-300">
-                <IconLink color="#FFFFFF" width="25" height="25"></IconLink>
               </a>
             </div>
           </div>
@@ -186,18 +183,5 @@ const imgProject3 = [
 </template>
 
 <style scoped>
-#about {
-  position: relative;
-  z-index: 1;
-}
-#about::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: -1;
-}
+
 </style>

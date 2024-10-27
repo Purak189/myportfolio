@@ -1,10 +1,32 @@
 <script setup>
-
+import { ref } from 'vue';
 import IconEmail from "@/assets/icons/IconEmail.vue";
 import IconMapPin from "@/assets/icons/IconMapPin.vue";
 import IconBriefcase from "@/assets/icons/IconBriefcase.vue";
 import IconLink from "@/assets/icons/IconLink.vue";
 import IconDownload from "@/assets/icons/IconDownload.vue";
+
+const message = ref('');
+
+function scrollToSection(sectionName) {
+  const sectionElement = document.getElementById(sectionName);
+  if (sectionElement) {
+    const offsetPosition = sectionElement.offsetTop;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function copyLink() {
+  navigator.clipboard.writeText('jairvelasquez.netlify.app').then(() => {
+    message.value = 'Correo copiado';
+    setTimeout(() => {
+      message.value = '';
+    }, 2000);
+  });
+}
 </script>
 
 <template>
@@ -25,8 +47,11 @@ import IconDownload from "@/assets/icons/IconDownload.vue";
                   <li class="text-white flex gap-2 md:gap-3 items-center"><IconEmail class="w-4 h-4 md:w-6 md:h-6"></IconEmail> jairvelazpizar@gmail.com</li>
                   <li class="text-white flex gap-2 md:gap-3 items-center"><IconMapPin class="w-4 h-4 md:w-6 md:h-6"></IconMapPin> Lima, Peru</li>
                   <li class="text-white flex gap-2 md:gap-3 items-center"><IconBriefcase class="w-4 h-4 md:w-6 md:h-6"></IconBriefcase> Part-time / Freelancer</li>
-                  <li class="text-white flex gap-2 md:gap-3 items-center"><IconLink class="w-4 h-4 md:w-6 md:h-6"></IconLink> www.jairvelasquez.com</li>
+                  <li class="text-white flex gap-2 md:gap-3 items-center cursor-pointer" @click="copyLink">
+                    <IconLink class="w-4 h-4 md:w-6 md:h-6 cursor-pointer"></IconLink> jairvelasquez.netlify.app
+                  </li>
                 </ul>
+                <p v-if="message" class="text-teal-400 mt-2">{{ message }}</p>
               </div>
               <div>
                 <button class="font-ubuntu flex gap-2 md:gap-3 items-center text-sm md:text-xl bg-white p-2 md:p-2 rounded-3xl mr-4 md:mr-8">
@@ -54,13 +79,13 @@ import IconDownload from "@/assets/icons/IconDownload.vue";
             <!-- Etiqueta de cierre </h1> -->
 
             <div class="mt-5">
-              <a
-                  href="mailto:tucorreo@example.com"
-                  class="text-teal-400 text-lg sm:text-xl flex items-center space-x-2"
+              <button
+                  @click="scrollToSection('contact')"
+                  class="text-teal-400 text-lg sm:text-xl flex items-center space-x-2 hover:bg-brand-1 hover:text-white p-2 rounded-3xl transition"
               >
                 <span class="text-3xl">Contáctame!</span>
-                <icon-email></icon-email>
-              </a>
+                <icon-email  color="#FFFFFF"></icon-email>
+              </button>
             </div>
           </div>
         </div>
@@ -70,5 +95,6 @@ import IconDownload from "@/assets/icons/IconDownload.vue";
 </template>
 
 <style scoped>
+
 
 </style>

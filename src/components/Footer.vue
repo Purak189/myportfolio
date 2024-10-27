@@ -22,7 +22,8 @@ import IconGitHub from "@/assets/icons/IconGitHub.vue";
       <div class="flex space-x-4">
         <!-- LinkedIn -->
         <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/jair-velasquez-pizarro-ab9027271/"
+            target="_blank"
             class="text-teal-400 hover:text-teal-300 transition duration-300"
             aria-label="LinkedIn"
         >
@@ -31,7 +32,8 @@ import IconGitHub from "@/assets/icons/IconGitHub.vue";
 
         <!-- GitHub -->
         <a
-            href="https://github.com/"
+            href="https://github.com/Purak189"
+            target="_blank"
             class="text-teal-400 hover:text-teal-300 transition duration-300"
             aria-label="GitHub"
         >

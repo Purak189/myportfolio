@@ -7,14 +7,14 @@
           @click.prevent="scrollToSection(section.name)"
           class="relative flex justify-center w-full"
       >
-        <RouterLink
+        <router-link
             :to="section.path"
             class="flex flex-col items-center text-white hover:text-green-500 transition"
             :class="{ 'text-green-500': activeSection === section.name }"
         >
           <component :is="section.icon" class="w-6 h-6" color="#FFFFFF"/>
           <span class="tooltip font-ubuntu text-lg">{{ section.label }}</span>
-        </RouterLink>
+        </router-link>
       </li>
     </ul>
   </nav>
@@ -22,7 +22,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { useRoute } from 'vue-router';
 import IconHome from "@/assets/icons/IconHome.vue";
 import IconAbout from "@/assets/icons/IconAbout.vue";
 import IconMonitor from "@/assets/icons/IconMonitor.vue";

@@ -1,6 +1,17 @@
+import { createApp } from 'vue';
 import './assets/main.css'
+import App from './App.vue';
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import 'primeicons/primeicons.css'
+import PrimeVue from "primevue/config";
 
-createApp(App).mount('#app')
+import Toast from 'primevue/toast';
+import ToastService from 'primevue/toastservice';
+
+
+
+createApp(App)
+    .use(PrimeVue, {ripple: true})
+    .use(ToastService)
+    .component('pv-toast', Toast)
+    .mount('#app')

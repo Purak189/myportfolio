@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import emailjs from 'emailjs-com';
 
+import { useToast } from 'primevue/usetoast';
+
 import IconMouse from "@/assets/icons/IconMouse.vue";
 import IconLine from "@/assets/icons/IconLine.vue";
 import IconSend from "@/assets/icons/IconSend.vue";
@@ -11,6 +13,8 @@ let formData = ref({
   email: "",
   message: "",
 });
+
+const toast = useToast();
 
 const submitForm = () => {
   emailjs.send(
@@ -25,8 +29,10 @@ const submitForm = () => {
   )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        toast.add({ severity: 'success', summary: 'Success', detail: 'Mensaje enviado correctamente', life: 3000 });
       }, (error) => {
         console.log('FAILED...', error);
+        toast.add({ severity: 'error', summary: 'Error', detail: 'Error al enviar el mensaje', life: 3000 });
       });
 };
 </script>
@@ -102,7 +108,6 @@ const submitForm = () => {
         </div>
       </form>
     </div>
-
   </section>
 
 </template>

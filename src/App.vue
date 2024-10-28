@@ -26,6 +26,7 @@ import NavMenu from "@/components/NavMenu.vue";
     <Formation/>
     <Contact/>
   </main>
+  <pv-toast></pv-toast>
 
   <footer>
     <Footer/>

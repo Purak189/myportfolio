@@ -20,7 +20,7 @@ function scrollToSection(sectionName) {
 }
 
 const redirectToCV = () => {
-  window.open('./src/assets/Jair-Velasquez-Pizarro-FlowCV-Resume-20241129.pdf', '_blank');
+  window.open('./Jair-Velasquez-Pizarro-FlowCV-Resume-20241129.pdf', '_blank');
 };
 
 function copyLink() {

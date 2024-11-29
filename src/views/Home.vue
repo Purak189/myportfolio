@@ -19,8 +19,12 @@ function scrollToSection(sectionName) {
   }
 }
 
+const redirectToCV = () => {
+  window.open('./src/assets/Jair-Velasquez-Pizarro-FlowCV-Resume-20241129.pdf', '_blank');
+};
+
 function copyLink() {
-  navigator.clipboard.writeText('jairvelasquez.netlify.app').then(() => {
+  navigator.clipboard.writeText('jairvelazpizar@gmail.com').then(() => {
     message.value = 'Correo copiado';
     setTimeout(() => {
       message.value = '';
@@ -40,21 +44,23 @@ function copyLink() {
               <div class="flex flex-col items-center">
                 <img src="../assets/img/ProfilePhoto.png" alt="Foto de perfil" class="w-12 h-12 md:w-28 md:h-28 mb-5 max-sm:w-24 max-sm:h-24">
                 <h2 class="text-xl md:text-3xl font-medium text-white">Jair Velasquez</h2>
-                <p class="text-sm md:text-base text-white">Ingenierio de Software</p>
+                <p class="text-sm md:text-base text-white">Desarrollador de Software</p>
               </div>
               <div>
                 <ul class="flex flex-col gap-2 md:gap-3 max-sm:gap-3 ">
-                  <li class="text-white flex gap-2 md:gap-3 items-center"><IconEmail class="w-4 h-4 md:w-6 md:h-6"></IconEmail> jairvelazpizar@gmail.com</li>
+                  <li class="text-white flex gap-2 md:gap-3 items-center" @click="copyLink">
+                    <IconEmail class="w-4 h-4 md:w-6 md:h-6"></IconEmail> jairvelazpizar@gmail.com</li>
                   <li class="text-white flex gap-2 md:gap-3 items-center"><IconMapPin class="w-4 h-4 md:w-6 md:h-6"></IconMapPin> Lima, Peru</li>
                   <li class="text-white flex gap-2 md:gap-3 items-center"><IconBriefcase class="w-4 h-4 md:w-6 md:h-6"></IconBriefcase> Part-time / Freelancer</li>
-                  <li class="text-white flex gap-2 md:gap-3 items-center cursor-pointer" @click="copyLink">
+                  <li class="text-white flex gap-2 md:gap-3 items-center cursor-pointer">
                     <IconLink class="w-4 h-4 md:w-6 md:h-6 cursor-pointer"></IconLink> jairvelasquez.netlify.app
                   </li>
                 </ul>
                 <p v-if="message" class="text-teal-400 mt-2">{{ message }}</p>
               </div>
               <div>
-                <button class="font-ubuntu flex gap-2 md:gap-3 items-center text-sm md:text-xl bg-white p-2 md:p-2 rounded-3xl mr-4 md:mr-8">
+                <button class="font-ubuntu flex gap-2 md:gap-3 items-center text-sm md:text-xl bg-white p-2 md:p-2 rounded-3xl mr-4 md:mr-8"
+                @click="redirectToCV">
                   Descargar CV <IconDownload class="w-4 h-4 md:w-6 md:h-6"></IconDownload>
                 </button>
               </div>

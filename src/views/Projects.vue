@@ -139,7 +139,7 @@ const imgProject4 = [
           <p class="mt-2 text-lg lg:text-base max-sm:text-sm text-justify">
             CreciTurismo es una plataforma desarrollada en una hackathon de 2 días, diseñada para facilitar la formalización de empresas de turismo en el Perú. El sistema permite a las micro y pequeñas empresas (MYPES) completar formularios digitales que funcionan como declaraciones juradas, agilizando los trámites de formalización.
 
-            Una vez formalizadas, las empresas pueden registrar sus servicios turísticos a través de formularios adicionales. Estos datos se integran directamente en la base de datos del MINCETUR, permitiendo que sus servicios sean visibles para turistas nacionales y extranjeros. Este enfoque busca fortalecer el crecimiento de las MYPES del sector turístico y promover su inclusión en el mercado formal.
+            Una vez formalizadas, las empresas pueden registrar sus servicios turísticos a través de formularios adicionales. Estos datos se integrarian directamente en la base de datos del MINCETUR, permitiendo que sus servicios sean visibles para turistas nacionales y extranjeros. Este enfoque busca fortalecer el crecimiento de las MYPES del sector turístico y promover su inclusión en el mercado formal.
           </p>
 
           <!-- Tecnologías usadas -->
